@@ -112,7 +112,7 @@ class Morris.Line extends Morris.Grid
         </div>
       """
     if typeof @options.hoverCallback is 'function'
-      content = @options.hoverCallback(index, @options, content)
+      content = @options.hoverCallback(index, @options, content, row)
     [content, row._x, row._ymax]
 
 

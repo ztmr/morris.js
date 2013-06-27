@@ -777,7 +777,7 @@
         content += "<div class='morris-hover-point' style='color: " + (this.colorFor(row, j, 'label')) + "'>\n  " + this.options.labels[j] + ":\n  " + (this.yLabelFormat(y)) + "\n</div>";
       }
       if (typeof this.options.hoverCallback === 'function') {
-        content = this.options.hoverCallback(index, this.options, content);
+        content = this.options.hoverCallback(index, this.options, content, row);
       }
       return [content, row._x, row._ymax];
     };
